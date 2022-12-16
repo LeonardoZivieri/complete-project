@@ -1,0 +1,16 @@
+{
+    "name": "database",
+    "scripts": {
+        "prisma": "dotenv -e ../../.env -- prisma",
+        "db:generate": "dotenv -e ../../.env -- prisma generate",
+        "db:push": "dotenv -e ../../.env -- prisma db push --skip-generate"
+    },
+    "dependencies": {
+        "@prisma/client": "^4.7.1",
+        "dotenv": "^16.0.3",
+        "dotenv-cli": "^6.0.0"
+    },
+    "devDependencies": {
+        "prisma": "^4.7.1"
+    }
+}
