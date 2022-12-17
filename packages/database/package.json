@@ -1,5 +1,7 @@
 {
     "name": "database",
+    "main": "./index.ts",
+    "types": "./index.ts",
     "scripts": {
         "prisma": "dotenv -e ../../.env -- prisma",
         "db:generate": "dotenv -e ../../.env -- prisma generate",

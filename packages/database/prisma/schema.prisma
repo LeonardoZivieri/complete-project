@@ -15,3 +15,11 @@ model User {
   email String  @unique
   name  String?
 }
+
+model Todo {
+  id         Int      @id @default(autoincrement())
+  item_text  String
+  status     Boolean
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
