@@ -1,5 +1,6 @@
 {
-    "recommendations": [
-        "prisma.prisma"
-    ]
+  "recommendations": [
+    "ms-azuretools.vscode-azurefunctions",
+    "prisma.prisma"
+  ]
 }

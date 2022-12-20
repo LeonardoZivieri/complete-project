@@ -9,6 +9,10 @@
       "outputs": []
     },
     "dev": {
+      "dependsOn": ["db:push", "db:generate", "db:migrate"],
+      "cache": false
+    },
+    "db:migrate": {
       "cache": false
     },
     "db:generate": {

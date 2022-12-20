@@ -1,6 +1,8 @@
 import * as trpc from "@trpc/server";
-import { Context } from "./app.context";
+import { TrpcAdapterContext, BufferToJSObjectTransformer } from '@h4ad/serverless-adapter/lib/frameworks/trpc';
+import { AppContext } from "./app.context";
 
 export const createRouter = () => {
-  return trpc.router<Context>();
+    return trpc.router<TrpcAdapterContext<AppContext>>()
+        .transformer(new BufferToJSObjectTransformer());
 };

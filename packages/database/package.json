@@ -1,9 +1,10 @@
 {
     "name": "database",
-    "main": "./index.ts",
-    "types": "./index.ts",
+    "main": "./index.js",
     "scripts": {
+        "build": "tsc",
         "prisma": "dotenv -e ../../.env -- prisma",
+        "db:migrate": "dotenv -e ../../.env -- prisma migrate",
         "db:generate": "dotenv -e ../../.env -- prisma generate",
         "db:push": "dotenv -e ../../.env -- prisma db push --skip-generate"
     },

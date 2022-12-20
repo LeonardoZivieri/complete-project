@@ -1,0 +1,22 @@
+{
+    "extends": "tsconfig/base.json",
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "outDir": "dist",
+        "rootDir": ".",
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "strict": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+    },
+    "include": [
+        "**/*.mts",
+        "**/*.ts"
+    ],
+    "exclude": [
+        "dist",
+        "node_modules"
+    ]
+}

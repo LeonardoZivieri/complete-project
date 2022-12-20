@@ -2,6 +2,7 @@
   "name": "complete-project",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -13,12 +14,16 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "concurrently": "^7.6.0",
     "eslint-config-custom": "*",
     "prettier": "latest",
-    "turbo": "latest"
+    "ts-node-dev": "^2.0.0",
+    "turbo": "latest",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=16.0.0 <17.0.0"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
