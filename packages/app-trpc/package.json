@@ -4,11 +4,12 @@
     "main": "dist/index.js",
     "license": "MIT",
     "scripts": {
-        "dev": "tsnd --respawn src/index.ts",
+        "dev": "tsnd  src/index.ts",
         "build": "tsc"
     },
     "dependencies": {
         "@h4ad/serverless-adapter": "^2.14.0",
+        "@microsoft/teamsfx": "^2.1.0",
         "@trpc/server": "^9.20.0",
         "cors": "^2.8.5",
         "express": "^4.17.3",

@@ -1,8 +1,9 @@
 {
     "name": "database",
-    "main": "./index.js",
+    "main": "dist/index.js",
     "scripts": {
         "build": "tsc",
+        "dev": "tsc -w",
         "prisma": "dotenv -e ../../.env -- prisma",
         "db:migrate": "dotenv -e ../../.env -- prisma migrate",
         "db:generate": "dotenv -e ../../.env -- prisma generate",
